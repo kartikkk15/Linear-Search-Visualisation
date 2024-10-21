@@ -1,0 +1,83 @@
+/* Body and container styling */
+.ls-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.ls-container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Highlight current search */
+td.highlight {
+    background-color: #ffeb3b;
+    transition: background-color 0.3s;
+}
+
+/* Success styling */
+td.found {
+    background-color: #4caf50;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    input, button {
+        width: 80%;
+        margin: 10px auto;
+    }
+}

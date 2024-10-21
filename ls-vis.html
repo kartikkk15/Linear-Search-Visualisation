@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search Visualization</title>
+    <link rel="stylesheet" href="ls-vis.css">
+</head>
+<body class="ls-body">
+
+    <div class="ls-container">
+        <h1>Linear Search Visualization</h1>
+        <input type="number" id="searchValue" placeholder="Enter value to search" />
+        <button onclick="startSearch()">Start Search</button>
+        <button onclick="resetSearch()">Reset</button>
+
+        <table id="searchTable">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically generated here -->
+            </tbody>
+        </table>
+        <p id="resultMessage"></p>
+    </div>
+
+    <script src="ls-vis.js"></script>
+</body>
+</html>
